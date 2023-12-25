@@ -1,0 +1,41 @@
+POST http://localhost:3000/user/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "admin",
+    "email": "db@gmail.com",
+    "name": "Dheeraj B",
+    "contactNumber": "432512341"
+}
+###
+
+POST http://localhost:3000/user/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "admin"
+}
+
+###
+
+GET http://localhost:3000/user HTTP/1.1
+content-type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTg2YWM2ZDMyODZjMzUzMmNhN2ZhNGQiLCJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzAzMzI2NDc5fQ.xb5e6TmwvRlC0T39cW5zGDaZ2mRWU142PlxqEbyci3Y
+
+
+
+###
+
+POST http://localhost:3000/user/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "sample",
+    "password": "11565text",
+    "email": "db@gmail.com",
+    "name": "Dheeraj B",
+    "contactNumber": "432512341"
+}
+###
